@@ -199,7 +199,7 @@ const Home: NextPage = () => {
   return (
     <PageContentLayout>
       <>
-        <CreatePostLink />
+        {user ? (<CreatePostLink />) : (<></>)}
         {loading ? (
           <PostLoader />
         ) : (

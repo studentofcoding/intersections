@@ -57,7 +57,7 @@ const CommunityPage: NextPage<CommunityPageProps> = ({ communityData }) => {
       <PageContentLayout>
         {/* Left Content */}
         <>
-          <CreatePostLink />
+          {user ? (<CreatePostLink />) : (<></>)}
           <Posts
             communityData={communityData}
             userId={user?.uid}
