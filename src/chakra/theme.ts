@@ -3,6 +3,8 @@ import { Button } from "./button";
 import { Input } from "./input";
 
 export const theme = extendTheme({
+  initialColorMode: 'light',
+  useSystemColorMode: false,
   colors: {
     brand: {
       100: "#FF3C00",
@@ -10,6 +12,7 @@ export const theme = extendTheme({
   },
   fonts: {
     body: "Open Sans, sans-serif",
+    color: "#000000",
   },
   styles: {
     global: () => ({

@@ -12,6 +12,17 @@
 /.next/
 /out/
 
+# Apps
+/markdown_apps
+/shdw_storage
+/job_crawler
+/tests-examples
+/twitter-clone
+playwright*
+
+# env
+.env*
+
 # production
 /build
 
@@ -36,3 +47,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+/test-results/
+/playwright-report/
+/playwright/.cache/

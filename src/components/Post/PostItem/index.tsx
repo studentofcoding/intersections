@@ -187,7 +187,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
             <Icon as={BsChat} mr={2} />
             <Text fontSize="9pt">{post.numberOfComments}</Text>
           </Flex>
-          <Flex
+          {/* <Flex
             align="center"
             p="8px 10px"
             borderRadius={4}
@@ -206,7 +206,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
           >
             <Icon as={IoBookmarkOutline} mr={2} />
             <Text fontSize="9pt">Save</Text>
-          </Flex>
+          </Flex> */}
           {userIsCreator && (
             <Flex
               align="center"
