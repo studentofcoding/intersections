@@ -137,27 +137,40 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                       </Flex>
                     </Flex>
                     <Box position="absolute" right="10px">
-                      <Button
+                      {isJoined ? null : <Button
                         height="22px"
                         fontSize="8pt"
+                        marginRight="5px"
+                        
                         onClick={(event) => {
                           event.stopPropagation();
                           onJoinLeaveCommunity(item, isJoined);
                         }}
-                        variant={isJoined ? "outline" : "solid"}
+                        variant="solid"
                       >
-                        {isJoined ? "Joined" : "Join"}
-                      </Button>
+                        +
+                      </Button>}
+                      <a href="{`/r/${item.id}`}">
+                        <Button
+                          height="22px"
+                          fontSize="8pt"
+                        >
+                          Open
+                        </Button>
+                      </a>
                     </Box>
+                    {/* <Box position="absolute" right="10px">
+                          
+                        </Box> */}
                   </Flex>
                 </Link>
               );
             })}
-            <Box p="10px 20px">
+            {/* <Box p="10px 20px">
               <Button height="30px" width="100%">
                 View All
               </Button>
-            </Box>
+            </Box> */}
           </>
         )}
       </Flex>
