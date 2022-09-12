@@ -36,21 +36,21 @@ const formTabs = [
     icon: IoDocumentText,
   },
   {
-    title: "Images & Video",
+    title: "Images",
     icon: IoImageOutline,
   },
-  {
-    title: "Link",
-    icon: BsLink45Deg,
-  },
-  {
-    title: "Poll",
-    icon: BiPoll,
-  },
-  {
-    title: "Talk",
-    icon: BsMic,
-  },
+  // {
+  //   title: "Link",
+  //   icon: BsLink45Deg,
+  // },
+  // {
+  //   title: "Poll",
+  //   icon: BiPoll,
+  // },
+  // {
+  //   title: "Talk",
+  //   icon: BsMic,
+  // },
 ];
 
 export type TabItem = {
@@ -167,7 +167,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({
             loading={loading}
           />
         )}
-        {selectedTab === "Images & Video" && (
+        {selectedTab === "Images" && (
           <ImageUpload
             selectedFile={selectedFile}
             setSelectedFile={setSelectedFile}
